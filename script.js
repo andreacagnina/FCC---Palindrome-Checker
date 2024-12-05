@@ -5,9 +5,9 @@ function isPalindrome(str) {
 }
 
 // Evento click sul pulsante
-document.querySelector("#check-btn").addEventListener("click", () => {
-    const textInput = document.querySelector("#text-input").value.trim();
-    const resultDiv = document.querySelector("#result");
+document.getElementById("check-btn").addEventListener("click", () => {
+    const textInput = document.getElementById("text-input").value.trim();
+    const resultDiv = document.getElementById("result");
 
     if (textInput.length === 0) {
         resultDiv.innerText = "Please input a value";
